@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regal Residences</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="waqar_stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <img src="https://i.ibb.co/XLCR4dr/Regal-Residences-logo-removebg-preview.png" alt="Regal Residences Logo" class="logo">
+            </div>
+            <div class="header-right">
+                <div class="contact-info">
+                    <i class="fas fa-phone"></i> +0123456789
+                    <i class="fas fa-envelope"></i> info@regalresidences.com
+                </div>
+                <div class="header-buttons">
+                    <button class="sell-property">Sell Property Here</button>
+                    <div class="dropdown">
+                        <button class="dropbtn">My Account <i class="fas fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="#">Login</a>
+                            <a href="#">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Properties <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Apartments</a></li>
+                        <li><a href="#">Penthouses</a></li>
+                        <li><a href="#">Mansions</a></li>
+                        <li><a href="#">Commercial Real Estate</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#">Services <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Selling</a></li>
+                        <li><a href="#">Renting</a></li>
+                        <li><a href="#">Investment Opportunities</a></li>
+                        <li><a href="#">Consultation</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section 3: Search Input Form with Background Image -->
+<section style="position: relative; background-image: url('https://i.ibb.co/2vMWjmw/daniel-barnes-RKd-Ll-Tyjm5g-unsplash.jpg'); background-size: cover; background-position: center; padding: 50px 0;">
+    <div style="max-width: 280px; margin: 0 auto 0 1074px; background: rgba(255, 255, 255, 0.7); padding: 20px; border-radius: 3px; ">
+        <form style="display: flex; flex-wrap: wrap; gap: 15px;">
+            <select style="flex: 1 1 100%; padding: 10px; border-radius: 3px;">
+                <option value="">Select Location</option>
+                <option value="California">California</option>
+                <option value="New York">New York</option>
+                <option value="Texas">Texas</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Nevada">Nevada</option>
+                <option value="Florida">Florida</option>
+                <option value="Illinois">Illinois</option>
+                <option value="Washington">Washington</option>
+                <option value="Massachusetts">Massachusetts</option>
+                <option value="Pennsylvania">Pennsylvania</option>
+            </select>
+            <select style="flex: 1 1 100%; padding: 10px; border-radius: 3px;">
+                <option value="">Select Property Type</option>
+                <option value="apartments">Apartments</option>
+                <option value="penthouses">Penthouses</option>
+                <option value="mansions">Mansions</option>
+                <option value="commercial">Commercial Real Estate</option>
+            </select>
+            <select style="flex: 1 1 100%; padding: 10px; border-radius: 3px;">
+                <option value="">Select Area</option>
+                <option value="upscale">Upscale Urban</option>
+                <option value="downtown">Downtown City</option>
+                <option value="gated">Gated Communities</option>
+                <option value="residency">Residency Apartments</option>
+            </select>
+            <select style="flex: 1 1 100%; padding: 10px; border-radius: 3px;">
+                <option value="">Balcony</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <div style="flex: 1 1 100%; display: flex; gap: 15px;">
+                <select style="flex: 1; padding: 10px; border-radius: 3px;">
+                    <option value="">Any Beds</option>
+                    <option value="1">1 Bed</option>
+                    <option value="2">2 Beds</option>
+                    <option value="3">3 Beds</option>
+                    <option value="4">4+ Beds</option>
+                </select>
+                <select style="flex: 1; padding: 10px; border-radius: 3px;">
+                    <option value="">Any Baths</option>
+                    <option value="1">1 Bath</option>
+                    <option value="2">2 Baths</option>
+                    <option value="3">3 Baths</option>
+                    <option value="4">4+ Baths</option>
+                </select>
+            </div>
+            <div style="flex: 1 1 100%; display: flex; gap: 15px;">
+                <label style="flex: 1; display: flex; align-items: center;">
+                    <input type="checkbox" style="margin-right: 10px;"> Rent
+                </label>
+                <label style="flex: 1; display: flex; align-items: center;">
+                    <input type="checkbox" style="margin-right: 10px;"> Sale
+                </label>
+            </div>
+            <div style="flex: 1 1 100%; display: flex; align-items: center; justify-content: center;">
+                <label style="margin-right: 10px;">Min</label>
+                <input type="range" style="flex: 1;" min="0" max="10000000" step="100000">
+                <label style="margin-left: 10px;">Max</label>
+            </div>
+            <button type="submit" style="flex: 1 1 100%; padding: 15px; background-color: #fca311; color: #fff; border: none; border-radius: 3px; font-family: 'Playfair Display', serif;">SEARCH LISTING</button>
+        </form>
+    </div>
+</section>
+
+    <!-- Section 4: Latest Properties -->
+    <section class="latest-properties">
+        <div class="container">
+            <h2>Latest Properties</h2>
+            <div class="properties-grid">
+                <div class="property">
+                    <img src="https://i.ibb.co/Dft8jq1/webaliser-TPTXZd9m-Oo-unsplash.jpg" alt="Property Image">
+                    <h3>Luxury Villa</h3>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                    <div class="property-details">
+                        <span>Area: 16233 ft<sup>2</sup></span>
+                        <span><i class="fas fa-bed"></i> 4</span>
+                    </div>
+                    <span class="tag rent">FOR RENT</span>
+                </div>
+                <!-- End of Luxury Villa Listing -->
+
+                <div class="property">
+                    <img src="https://i.ibb.co/Dft8jq1/webaliser-TPTXZd9m-Oo-unsplash.jpg" alt="Property Image">
+                    <h3>Modern Apartment</h3>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                    <div class="property-details">
+                        <span>Area: 12000 ft<sup>2</sup></span>
+                        <span><i class="fas fa-bed"></i> 3</span>
+                    </div>
+                    <span class="tag sale">FOR SALE</span>
+                </div>
+                <!-- End of Modern Apartment Listing -->
+
+                <div class="property">
+                    <img src="https://i.ibb.co/Dft8jq1/webaliser-TPTXZd9m-Oo-unsplash.jpg" alt="Property Image">
+                    <h3>Cozy Cottage</h3>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                    <div class="property-details">
+                        <span>Area: 9000 ft<sup>2</sup></span>
+                        <span><i class="fas fa-bed"></i> 2</span>
+                    </div>
+                    <span class="tag rent">FOR RENT</span>
+                </div>
+                <!-- End of Cozy Cottage Listing -->
+
+                <div class="property">
+                    <img src="https://i.ibb.co/Dft8jq1/webaliser-TPTXZd9m-Oo-unsplash.jpg" alt="Property Image">
+                    <h3>Beach House</h3>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                    <div class="property-details">
+                        <span>Area: 15000 ft<sup>2</sup></span>
+                        <span><i class="fas fa-bed"></i> 5</span>
+                    </div>
+                    <span class="tag sale">FOR SALE</span>
+                </div>
+                
+            
+    </section>
+
+   <!-- This section creates a call-to-action (CTA) section with a background image -->
+<section class="contact-cta" style="background-image: url('https://i.ibb.co/Dft8jq1/webaliser-TPTXZd9m-Oo-unsplash.jpg');">
+    <!-- Container to center the content and limit the width -->
+    <div class="container">
+        <!-- Main heading for the CTA section -->
+        <h2>Want to Sale Or Purchase Luxury Property? Contact us Now</h2>
+        <!-- Button that users can click to contact -->   
+        <button class="contact-btn">Contact Us</button>
+    </div>
+</section>
+
+<section class="meet-our-agents">
+    <div class="container">
+        <h2>Meet Our Agents</h2>
+        <div class="agent-grid">
+            <div class="agent-box">
+                <h3>Sophia Thompson</h3>
+                <img src="https://i.ibb.co/r3Wjwmh/jimmy-fermin-bqe0-J0b26-RQ-unsplash.jpg" alt="Agent Image">
+                <p>Specializes in luxury waterfront properties and high-end estates.</p>
+                <div class="social-icons">
+                    <!-- Add Font Awesome icons here -->
+                </div>
+                <button class="more-details">More Details...</button>
+            </div>
+            <!-- Repeat the above block for each agent --> <div class="agent-box">
+                <h3>Emily Johnson</h3>
+                <img src="https://i.ibb.co/YN009Yk/michael-dam-m-EZ3-Po-FGs-k-unsplash.jpg" alt="Agent Image">
+                <p>Known for her expertise in commercial real estate and investment properties.</p>
+                <div class="social-icons">
+                    <!-- Add Font Awesome icons here -->
+                </div>
+                <button class="more-details">More Details...</button>
+            </div>
+           <div class="agent-box">
+                <h3>James Anderson</h3>
+                <img src="https://i.ibb.co/xjY78s2/albert-dera-ILip77-Sbm-OE-unsplash.jpg" alt="Agent Image">
+                <p>Focuses on family-friendly suburban homes and first-time homebuyers.</p>
+                <div class="social-icons">
+                    <!-- Add Font Awesome icons here -->
+                </div>
+                <button class="more-details">More Details...</button>
+            </div>
+            <div class="agent-box">
+                <h3>Olivia Martinez</h3>
+                <img src="https://i.ibb.co/Gns0xCQ/stephanie-liverani-Zz5-LQe-VSMY-unsplash.jpg" alt="Agent Image">
+                <p>Expert in urban condominiums and downtown real estate markets.</p>
+                <div class="social-icons">
+                    <!-- Add Font Awesome icons here -->
+                </div>
+                <button class="more-details">More Details...</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Properties</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>Lorem ipsum, Dolor, 1234</p>
+            <p><i class="fas fa-phone"></i> 0123456789</p>
+            <p><i class="fas fa-envelope"></i> info@companyname.com</p>
+            <h3>Our Social Networks</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Most Recent Properties</h3>
+            <div class="recent-property">
+                <img src="https://i.ibb.co/Dft8jq1/webaliser-TPTXZd9m-Oo-unsplash.jpg" alt="Property Image">
+                <p>Lorem Ipsum is simply dummy text of the Area: 16233 ft.</p>
+            </div>
+            <div class="recent-property">
+                <img src="https://i.ibb.co/Dft8jq1/webaliser-TPTXZd9m-Oo-unsplash.jpg" alt="Property Image">
+                <p>Lorem Ipsum is simply dummy text of the Area: 16233 ft.</p>
+            </div>
+            <div class="recent-property">
+                <img src="https://i.ibb.co/Dft8jq1/webaliser-TPTXZd9m-Oo-unsplash.jpg" alt="Property Image">
+                <p>Lorem Ipsum is simply dummy text of the Area: 16233 ft.</p>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Contact Us</h3>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
