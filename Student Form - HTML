@@ -1,0 +1,208 @@
+<!-- Waqar Ali - 036 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Student Registration Form</h1>
+        <p>Fill out the form carefully for registration</p><br>
+        <hr><br>
+        <form id="registrationForm">
+            <label for="firstName">Student Name</label>
+            <div class="name-fields">
+                <div class="name-field">
+                    <input type="text" id="firstName" name="firstName" required>
+                    <small>First Name</small>
+                </div>
+                <div class="name-field">
+                    <input type="text" id="middleName" name="middleName">
+                    <small>Middle Name</small>
+                </div>
+                <div class="name-field">
+                    <input type="text" id="lastName" name="lastName" required>
+                    <small>Last Name</small>
+                </div>
+            </div><br>
+          
+          
+            <div class="birth-gender-fields">
+                <div class="birth-date">
+                    <label for="birthMonth">Birth Date</label>
+                    <div class="date-fields">
+                        <div class="date-field">
+                            <select id="birthMonth" name="birthMonth" required>
+                                <!-- Options for months 1-12 -->
+                                <option value="" disabled selected></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <small>Month</small>
+                        </div>
+                        <div class="date-field">
+                            <select id="birthDay" name="birthDay" required>
+                                <!-- Options for days 1-31 -->
+                                <option value="" disabled selected></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <small>Day</small>
+                        </div>
+                        <div class="date-field">
+                            <select id="birthYear" name="birthYear" required>
+                                <!-- Options for last 50 years -->
+                                <option value="" disabled selected></option>
+                                <script>
+                                    const currentYear = new Date().getFullYear();
+                                    for (let i = currentYear; i >= currentYear - 50; i--) {
+                                        document.write(`<option value="${i}">${i}</option>`);
+                                    }
+                                </script>
+                            </select>
+                            <small>Year</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="gender-field">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Please Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div><br>
+          
+        
+          
+                <div class="address-fields">
+            <label for="streetAddress">Address</label>
+            <div class="address-field">
+                <input type="text" id="streetAddress" name="streetAddress" required>
+                <small>Street Address</small>
+            </div>
+            <div class="address-field">
+                <input type="text" id="streetAddress2" name="streetAddress2">
+                <small>Street Address Line 2</small>
+            </div>
+            <div class="city-state-fields">
+                <div class="city-field">
+                    <input type="text" id="city" name="city" required>
+                    <small>City</small>
+                </div>
+                <div class="state-field">
+                    <input type="text" id="state" name="state" required>
+                    <small>State / Province</small>
+                </div>
+            </div>
+            <div class="address-field">
+                <input type="text" id="postalCode" name="postalCode" required>
+                <small>Postal / Zip Code</small>
+            </div>
+        </div><br>
+
+        <div class="contact-fields">
+            <div class="email-field">
+                <label for="studentEmail">Student E-mail</label>
+                <input type="email" id="studentEmail" name="studentEmail" placeholder="ex: myname@example.com" required>
+                <small>example@example.com</small>
+            </div>
+            <div class="mobile-field">
+                <label for="mobileNumber">Mobile Number</label>
+                <input type="text" id="mobileNumber" name="mobileNumber" placeholder="(000) 000-0000" required>
+            </div>
+        </div><br>
+
+        <div class="contact-fields row-spacing">
+            <div class="phone-field">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="(000) 000-0000">
+            </div>
+            <div class="work-field">
+                <label for="workNumber">Work Number</label>
+                <input type="text" id="workNumber" name="workNumber" placeholder="(000) 000-0000">
+            </div>
+        </div><br>
+          
+                <div class="company-field">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" required>
+        </div><br>
+
+
+        <div class="course-field">
+            <label for="courses">Courses</label>
+            <select id="courses" name="courses" required>
+                <option value="" disabled selected>Please Select</option>
+                <!-- Add options different courses here -->
+                <option value="course1">Course 1</option>
+                <option value="course2">Course 2</option>
+                <option value="course3">Course 3</option>
+                <option value="course4">Course 4</option>
+                <option value="course5">Course 5</option>
+                <option value="course6">Course 6</option>
+                <option value="course7">Course 7</option>
+                <option value="course8">Course 8</option>
+                <option value="course9">Course 9</option>
+                <option value="course10">Course 10</option>
+            </select>
+        </div><br>
+
+                <div class="comments-field">
+            <label for="comments">Additional Comments</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+        </div>
+
+                <div class="form-actions row-spacing">
+            <button type="submit" class="submit-btn">Submit Application</button>
+            <button type="reset" class="clear-btn">Clear Fields</button>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
